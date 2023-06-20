@@ -8,7 +8,23 @@ class DashboardPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("Dashboard"),
+        leading: IconButton(
+          icon: Image.asset("assets/stream.png"),
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            icon: Image.asset("assets/search.png"),
+            onPressed: () {},
+          ),
+        ],
+        title: Text(
+          "Explore",
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: "Poppins",
+              color: Colors.white),
+        ),
         centerTitle: true,
         backgroundColor: Color.fromRGBO(0, 0, 0, 1),
       ),

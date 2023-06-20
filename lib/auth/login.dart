@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mood_ire/auth/signup.dart';
 import 'package:mood_ire/screens/dashboard.dart';
 
 class LoginPage extends StatelessWidget {
@@ -235,7 +236,11 @@ class LoginPage extends StatelessWidget {
                           const SizedBox(width: 1.0),
                           TextButton(
                             onPressed: () {
-                              // Forgot Password functionality
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SignupPage()),
+                              );
                             },
                             child: const Text(
                               'Create Now',

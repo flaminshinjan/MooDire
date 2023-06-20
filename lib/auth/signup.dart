@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mood_ire/auth/login.dart';
 import 'package:mood_ire/screens/dashboard.dart';
 
 class SignupPage extends StatelessWidget {
@@ -28,9 +29,9 @@ class SignupPage extends StatelessWidget {
                 children: [
                   Positioned(
                     top: 320,
-                    left: 150,
+                    left: 140,
                     child: Text(
-                      "Login",
+                      "Signup",
                       style: TextStyle(
                         fontSize: 40,
                         fontFamily: 'Poppins',
@@ -83,7 +84,7 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
-                          hintText: 'Password',
+                          hintText: 'Enter Password',
                           hintStyle: TextStyle(color: Colors.grey),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -100,24 +101,37 @@ class SignupPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 700,
-                    left: 20,
-                    child: TextButton(
-                      onPressed: () {
-                        // Forgot Password functionality
-                      },
-                      child: const Text(
-                        'Forgot Password?',
-                        style: TextStyle(
-                          fontSize: 14.0,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 247, 247, 247),
+                    top: 610,
+                    left: 25,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      width: 370,
+                      height: 50,
+                      child: TextField(
+                        style: TextStyle(color: Colors.black),
+                        decoration: InputDecoration(
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'Confirm Password',
+                          hintStyle: TextStyle(color: Colors.grey),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 20.0),
                         ),
                       ),
                     ),
                   ),
                   Positioned(
-                    top: 650,
+                    top: 690,
                     left: 25,
                     child: MaterialButton(
                       onPressed: () {
@@ -135,7 +149,7 @@ class SignupPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: const Text(
-                        'Login',
+                        'Signup',
                         style: TextStyle(fontSize: 16),
                       ),
                     ),
@@ -228,17 +242,21 @@ class SignupPage extends StatelessWidget {
                       child: Row(
                         children: [
                           const Text(
-                            "Don't have an account?",
+                            "Have an account already?",
                             style:
                                 TextStyle(fontSize: 14.0, color: Colors.white),
                           ),
                           const SizedBox(width: 1.0),
                           TextButton(
                             onPressed: () {
-                              // Forgot Password functionality
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage()),
+                              );
                             },
                             child: const Text(
-                              'Create Now',
+                              'Login',
                               style: TextStyle(
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.bold,
