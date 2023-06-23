@@ -137,8 +137,7 @@ class SignupPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => DashboardPage()),
+                          MaterialPageRoute(builder: (context) => NavPage()),
                         );
                       },
                       color: Color.fromARGB(53, 150, 150, 151),

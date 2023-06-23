@@ -125,7 +125,7 @@ class LoginPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => DashboardPage()),
+                              builder: (context) => NavPage()),
                         );
                       },
                       color: Color.fromARGB(53, 150, 150, 151),
