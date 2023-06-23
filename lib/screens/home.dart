@@ -216,7 +216,7 @@ class HomePage extends StatelessWidget {
                             height: 220,
                             child: Stack(
                               children: [
-                                Image.asset('assets/feed1.png'),
+                                Image.asset('assets/feed2.png'),
                                 Positioned(
                                   top: 170,
                                   left: 5,
@@ -227,7 +227,7 @@ class HomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(5),
                                     ),
                                     child: const Text(
-                                      "#let’s meet dexter...  king of the pride",
+                                      "#let’s meet moutains...  beautyof the pride",
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w500,
