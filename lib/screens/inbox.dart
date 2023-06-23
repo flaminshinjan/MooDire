@@ -6,24 +6,24 @@ class InboxPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text(
-          "InBoX",
-          style: TextStyle(
-              fontWeight: FontWeight.w400,
-              fontFamily: "Poppins",
-              color: Colors.white),
-        ),
-        centerTitle: true,
         backgroundColor: Colors.black,
-        actions: [
-          IconButton(
-            icon: Image.asset("assets/search.png"),
-            onPressed: () {},
+        appBar: AppBar(
+          title: const Text(
+            "InBoX",
+            style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontFamily: "Poppins",
+                color: Colors.white),
           ),
-        ],
-      ),
-    );
+          centerTitle: true,
+          backgroundColor: Colors.black,
+          actions: [
+            IconButton(
+              icon: Image.asset("assets/search.png"),
+              onPressed: () {},
+            ),
+          ],
+        ),
+        body: Container());
   }
 }
